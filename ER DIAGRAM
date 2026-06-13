@@ -1,0 +1,34 @@
++------------------+
+|      CUSTOMER    |
++------------------+
+| Customer_ID (PK) |
+| Name             |
+| Phone            |
++------------------+
+          |
+          | Places
+          |
+          V
+
++------------------+
+|      ORDER       |
++------------------+
+| Order_ID (PK)    |
+| Order_Code       |
+| Quantity         |
+| Total_Price      |
+| Payment_Method   |
+| Customer_ID (FK) |
++------------------+
+          |
+          | Contains
+          |
+          V
+
++------------------+
+|    FOOD_ITEM     |
++------------------+
+| Food_ID (PK)     |
+| Food_Name        |
+| Price            |
++------------------+
